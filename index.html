@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Hiba Lashari" />
+    <meta
+      name="description"
+      content="this page contain all the stuff I am learning during the lecture on HTML with freeCodeCamp"/>
+    <title>my first web page</title>
+    <link rel="icon" href="html.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>Hello world!</h1>
+      <nav>
+        <ul>
+          <li><a href="#basics">Learn basics</a></li>
+            <li><a href="#lists">Learn Lists</a></li>
+            <li><a href="#links">Learn Links</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr>
+
+    <main>
+
+    <h2>Heading 2</h2>
+    <p>This is my 1st web page.</p>
+
+    <hr>
+    <section id="basics">
+    <h3>Heading 3</h3>
+    <p>We are testing different fonts of headings here. <br><br></p>
+
+      <h4>Basic Commands:</h4>
+      1- &lt;br&gt; is used to add break and shift to next line each time you
+      are writing any thing <br><br>
+      &nbsp; 2- nbsp with an & symbol in the start is use to add some extra
+      space.
+      <br><br>
+      &nbsp;&nbsp;&nbsp; 3- here 3 nbsp are used. <br><br>
+      4- if you want to add comment you can use &lt;!--comment--&gt; and the
+      comment is ready you can not see it on screen <br><br>
+      5- you can also add abbiviation using abbr i.e
+      <abbr title="abbriviation">abbr</abbr><br><br>
+      6- &lt;strong&gt; <strong>text to be bold</strong> &lt;strong&gt; is used
+      to bold the required text <br><br>
+      7- &lt;em&gt;<em> text to be emphasized</em> &lt;em&gt; is used to
+      emphaisize any text . <br><br>
+      8- if you want to add address of any thing you use &lt; address &gt; add
+      address of place &lt; address &gt; i.e.
+      <address>
+        Capital University of Science and Technology <br>
+        Islamabad, <br>
+        Pakistan <br><br>
+      </address>
+
+    9- ctrl+u is used to view the code on live server. you can run the code in
+    inspect mode and even press ctrl+u to see what is going on, on the server.
+    <br><br>
+
+    10- sections can also be created by using &lt;section&gt;
+  
+
+    <!--html comment is used in this way-->
+  </section>
+
+    <hr>
+
+    <section id="lists">
+
+    <h4>List Types in HTML</h4>
+    <p> There are 3 types of Lists <br> </p>
+    <ol>
+    <li>Ordered Lists </li>
+    <li>Unordered Lists </li>
+    <li>Description Lists </li>
+    </ol>
+
+
+    <h5>Ordered List in HTML</h5>
+    <p> Till now we were using nbsp to add space and make bullet points but now we can do it automatically by using tags. i.e. to start an ordered list we have to use &lt;ol&gt; at the start of the list and &lt;/ol&gt; at the end of the list. then to add bullet points we need to use &lt;li&gt; content of bullet point &lt;/li&gt;    <br> </p>
+    <ol>
+    <li>Point A </li>
+    <li>Point B </li>
+    <li>Point C </li>
+    </ol>
+
+
+    <h5>Unordered List in HTML</h5>
+    <p> To start an unordered list we have to use &lt;ul&gt; at the start of the list and &lt;/ul&gt; at the end of the list. then to add bullet points we need to use &lt;li&gt; content of bullet point &lt;/li&gt;. Here you will notice that instead of numbering, bullets are used. <br> </p>
+
+    <ul>
+    <li>Point A </li>
+    <li>Point B </li>
+    <li>Point C </li>
+    </ul>
+
+
+    <h5>Description List in HTML</h5>
+    <p> To start description list we have to use &lt;dl&gt; at the start of the list and &lt;/dl&gt; at the end of the list. then to add bullet points we need to use &lt;dt&gt; description Term &lt;/dt&gt; and &lt;dd&gt; description Details &lt;/dd&gt;. Here you will notice that instead of numbering and bullets we can add discription of each point. Discription term is to the left and description details are indented a little bit to the right <br> </p>
+    <dl>
+    <dt>Point A </dt>
+    <dd>Description of Point A</dd>
+    <dt>Point B </dt>
+    <dd>Description of Point B</dd>
+    <dt>Point C </dt>
+    <dd>Description of Point C</dd>
+    </dl>
+
+  </section>
+
+    <hr>
+
+    <section id="links">
+
+    <h4>Adding Links in HTML</h4>
+
+    <p>
+      There are 3 types of links: <br>
+      <ol>
+        <li>Absolute Reference</li>
+        <li>Relative Reference</li>
+        <li>Internal Reference</li>
+      </ol>
+    </p>
+      To link anything we use anchor tag. Lets link the youtube tutorial I am using to learn <a href="https://www.youtube.com/watch?v=kUMe1FH4CHE">HTML</a>. For this is have used anchor tag at the start and end. in the starting anchor tag I have added the link of this video in href i.e. &lt;a href="https://www.youtube.com/"&gt;HTML&lt;/a&gt; and you are good to go. <br><br>
+      This is an absolute reference because we are giving the full address of the web page to this page. <br><br>
+      There is another term relative reference which is for something that is on the same server/folder where we have our page. <br><br>
+      The 3rd one is to link a specific part/area/portion of the page to something also called as internal reference. for this 1st of all we have created different sections and given those sections an id. then we have used anchor tag and in href we have given the id name of the section with a # in the start. it will look like this:
+      &lt;a href="#section_id"&gt; text &lt;/a&gt;, if we only use # in href and do not write any section id it will automatically go to the top of the page. <br><br>
+
+      If you want to make a download link i.e. if you click on the link it will start downloading the linked file. you have to make an anchor tag like this: &lt;a href="name of file" <strong>download</strong>&gt; text &lt;/a&gt; <br><br>
+
+      If you want to make a Contact me by email link i.e. if you click on the link it will send an email on your email account. you have to make an anchor tag like this: &lt;a href="mailto:random@email.com"&gt; text &lt;/a&gt; <br><br>      
+
+      If you want to make a Contact me by Phone No. link i.e. if you click on the link it will directly call you on your mobile no. you have to make an anchor tag like this: &lt;a href="tel:+921234567890"&gt; text &lt;/a&gt; <br><br> 
+
+      If you want to make a link that will open in new tab, you have to make an anchor tag like this: &lt;a href="link" target = "_blank" &gt; text &lt;/a&gt; <br><br> 
+
+      And finally if you want to make a link by which you want to come back on the home page, you have to make an anchor tag like this: &lt;a href="/" &gt; text &lt;/a&gt; <br><br> 
+      
+    
+
+  </section>
+
+    <hr>
+
+    <section id="add_img">
+
+      <h4>Adding Images in HTML</h4>
+      <p>
+        In this section we will learn to add images in html file using img. for this we have img tag. it has only starting tag not the ending one. <br>
+        &lt;img src="image location with name" alt="description shown on screen incase image is not loaded for some reason" title="text to be displayed whe curse is in image" width="width of img" height="height of img"&gt;
+      </p>
+
+      <img src="images/img1.jpg" alt="HTML coding image" title="coding image for motivation" width="250" height="250">
+
+      <p>
+        Now if you want to add caption to the image, you have to define the image as a figure. you can do it by adding a paragraph below the image but that is not the proper way. <br>
+        You will notice that it is indented and the caption is also added. Now this caption is linked with this image. we have also added loading type as lazy. it means when the page will load it will not load all the images. when we scroll down and come close to the image only at that time the image will be loaded. by using this the speed to load the page increases. the default option is "eager"
+        <figure>
+          <img src="images/img2.jpg" alt="test img 2" title="This is the 2nd test image" width="250" height="250" loading="lazy">
+          <figcaption>
+            HTML coding image 2
+          </figcaption>
+        </figure>
+      </p>
+
+      Figure is not only to show images. we can also use figure to show the code. for code we have also added the tag of code. by using it the writing format for code is changes as compare to the other text on this page/paragraph, for example:
+      <figure>
+        <figcaption>
+          Caption added on the top for example
+        </figcaption>
+        <p>
+          <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
+        </p>
+      </figure>
+
+    </section>
+
+    <hr>
+
+    <section>
+      <h3> Sementic Tags </h3>
+        <aside>
+          <details>
+            <summary>
+              Guess the number of <mark>hours</mark> to learn this?
+            </summary>
+            <p>I started this learning on friday at <time datetime="08:00">8am</time> and today it is monday. and this lecture is of about <time datetime="PT3H">4 hours</time>. But along with practice it is taking more time.</p>
+            <p>Plz avoid these tags i.e. div, span 
+              in this page replace the sections with articles. since it is a sementic tag. you can add sections in articles.
+            </p>
+          </details>
+        </aside>
+      
+
+    </section>
+    <hr>
+
+    <article>
+      <h3>Create Tables</h3>
+      <table>
+        <caption>My daily schedule</caption>
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th scope="col">Time</th>
+            <th scope="col">Activitys</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">morning</th>
+          <td>
+            <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+          </td>
+          <td>
+            write code
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">Noon</th>
+          <td>
+            <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+          </td>
+          <td>
+            Lunch
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">afternoon</th>
+          <td>
+            <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
+          </td>
+          <td>
+            write code
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">Free time</td>
+        </tr>
+        <tr>
+          <th scope="row">evening</th>
+          <td rowspan="2">All other times</td>
+          <td>Free time </td>
+        </tr>
+        <tr>
+          <th scope="row">Night</th>
+          <td>sleep</td></tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">
+              And thats what I do throughtout the week, eat, sleep, recharge and code.
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </article>
+
+    <hr>
+    <article id="contact">
+      <h2>Contact me </h2>
+      <p>I'd really like to hear from you!</p>
+      <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+          <legend>Personal Info</legend>
+        <p>
+          <label for="firstName">First name: </label>
+          <input type="text" name="firstName" id="firstName" placeholder="ABC" autocomplete="on" required autofocus>
+        </p>
+        
+        <p>
+          <label for="lastName">Last name: </label>
+          <input type="text" name="lastName" id="lastName" placeholder="XYZ" autocomplete="on" required>
+        </p>
+
+        <p>
+          <label for="password">Password: </label>
+          <input type="password" name="password" id="password" placeholder="Enter password" required>
+        </p>
+
+        <p>
+          <label for="phone">Phone No.: </label>
+          <input type="tel" name="phone" id="phone" placeholder="+92-3456789011" pattern="+[0-9]{2}-[0-9]{10}" required>
+        </p>
+
+        <p>
+          <label for="decade"> Favorite Decade: </label>
+          <input type="number" name="decade" id="decade" min="1950" max="2030" step="10" value="1980">
+        </p>
+
+        <p>
+          <label for="coffee">Favourite Coffee:</label>
+          <select name="coffee" id="coffee">
+            <option value="regular coffee">Regular Coffee</option>
+            <option value="iced coffee">Iced Coffee</option>
+            <option value="latte" selected>Latte</option>
+            <option value="cappuccino">Cappuccino</option>
+            <option value="cortado">Cortado</option>
+            <option value="americano">Americano</option>
+            <option value="other">Other</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="Drinks">Favourite Drinks:</label>
+          <select name="drinks" id="Drinks" multiple size="5">
+            <optgroup label="Hot Drinks">
+            <option value="coffee"> Coffee</option>
+            <option value="tea">Tea</option>
+            <option value="green tea">Green Tea</option>
+          </optgroup>
+          <optgroup label="Cold Drinks">
+            <option value="pepsi">Pepsi</option>
+            <option value="7 up">7 Up</option>
+            <option value="sprite">Sprite</option>
+          </optgroup>
+            <option value="other">Other</option>
+          </select>
+        </p>
+        
+
+        <p>
+          <label for="Drinks">Favourite Drinks:</label>
+          <input type="text" name="coffee" id="coffee" list="coffee-list">
+          <datalist id="coffee-list">
+            <option> Coffee</option>
+            <option>Tea</option>
+            <option>Green Tea</option>
+            <option>Pepsi</option>
+            <option>7 Up</option>
+            <option>Sprite</option>
+            <option>Other</option>
+          </datalist>
+            
+        </p>
+
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Favorite food</legend>
+        <p>
+          <input type="radio" name="food" id="tacos" value="tacos">
+          <label for="tacos">Tacos</label>
+        </p>
+        <p>
+          <input type="radio" name="food" id="burger" value="burger">
+          <label for="burger">Burger</label>
+        </p>
+        <p>
+          <input type="radio" name="food" id="pizza" value="pizza">
+          <label for="pizza">Pizza</label>
+        </p>
+        <p>
+          <input type="radio" name="food" id="otherfood" value="other">
+          <label for="other">Other</label>
+        </p>
+        
+      </fieldset>
+        
+      <fieldset>
+        <legend>Favorite Pets</legend>
+        <p>
+          <input type="checkbox" name="pets" id="dog" value="dog">
+          <label for="dog">Dog</label>
+        </p>
+        <p>
+          <input type="checkbox" name="pets" id="cat" value="cat">
+          <label for="cat">Cat</label>
+        </p>
+        <p>
+          <input type="checkbox" name="pets" id="horse" value="horse">
+          <label for="horse">Horse</label>
+        </p>
+        <p>
+          <input type="checkbox" name="pets" id="otherpet" value="other">
+          <label for="other">Other</label>
+        </p>
+        
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Any Message</legend>
+        <label for="message">Your Message:</label>
+        <br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your Message Here"></textarea>
+      </fieldset>
+      <br>
+      <fieldset>
+        <input type="submit" value="Submit">
+        <button type="reset">Reset</button>
+        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+      </fieldset>
+        
+      </form>
+    </article>
+
+  </main>
+
+    <hr>
+    <footer>
+      <p>&lt;&lt;&lt;&copy;<a href="about.html">hiba lashari</a>&gt;&gt;&gt;</p>
+      <p>
+        <a href="#">Back to Top</a>
+      </p>
+  </footer>
+  </body>
+</html>
